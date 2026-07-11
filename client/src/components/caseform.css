@@ -1,0 +1,294 @@
+/* Base styles for desktop */
+.lawyer-register-container-cases {
+    border: 2px solid hsl(205, 78%, 60%);
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto 19rem auto;
+    border-radius: 10px;
+    min-height: 40rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .textLogoContainer-cases {
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .textLogoContainer-cases h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .logoText-cases {
+    color: hsl(205, 78%, 60%);
+    font-weight: normal;
+  }
+  
+  .lawyer-details-container-cases {
+    margin: 2rem;
+    min-height: 60vh;
+  }
+  
+  .form-container-registration-cases {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    position: relative;
+    padding-bottom: 6rem;
+  }
+  
+  .lawyer-details-control-cases,
+  .lawyer-details-control {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .lawyer-details-control-cases label,
+  .lawyer-details-control label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .inputControl-cases,
+  .inputControl {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .inputControl-cases:focus,
+  .inputControl:focus {
+    outline: none;
+    border-color: hsl(205, 78%, 60%);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  }
+  
+  .inputControl-cases[type="file"] {
+    padding: 0.5rem;
+  }
+  
+  textarea.inputControl-cases {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .create-lawyer-account-cases {
+    background-color: hsl(205, 78%, 60%);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .create-lawyer-account-cases:hover {
+    background-color: hsl(205, 78%, 50%);
+    transform: translateY(-2px);
+  }
+  
+  .create-lawyer-account-cases:active {
+    transform: translateY(0);
+  }
+  
+  /* Message styling */
+  .message-container {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-success {
+    color: #27ae60;
+    background-color: #d5f4e6;
+    border: 1px solid #27ae60;
+  }
+  
+  .message-error {
+    color: #e74c3c;
+    background-color: #fdeaea;
+    border: 1px solid #e74c3c;
+  }
+  
+  /* Tablet styles */
+  @media (max-width: 768px) {
+    .lawyer-register-container-cases {
+      width: 95%;
+      margin: 2rem auto 10rem auto;
+      padding: 0.5rem;
+    }
+  
+    .textLogoContainer-cases {
+      margin: 1rem;
+    }
+  
+    .textLogoContainer-cases h1 {
+      font-size: 2rem;
+    }
+  
+    .lawyer-details-container-cases {
+      margin: 1rem;
+    }
+  
+    .form-container-registration-cases {
+      margin: 1rem;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding-bottom: 4rem;
+    }
+  
+    .lawyer-details-control-cases,
+    .lawyer-details-control {
+      font-size: 1.1rem;
+    }
+  
+    .inputControl-cases,
+    .inputControl {
+      font-size: 1rem;
+      padding: 0.7rem;
+    }
+  
+    .create-lawyer-account-cases {
+      font-size: 1rem;
+      padding: 0.9rem 1.5rem;
+      max-width: 100%;
+    }
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 480px) {
+    .lawyer-register-container-cases {
+      width: 95%;
+      margin: 1rem auto 5rem auto;
+      padding: 0.5rem;
+      border-radius: 8px;
+    }
+  
+    .textLogoContainer-cases {
+      margin: 0.5rem;
+    }
+  
+    .textLogoContainer-cases h1 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+  
+    .lawyer-details-container-cases {
+      margin: 0.5rem;
+    }
+  
+    .form-container-registration-cases {
+      margin: 0.5rem;
+      gap: 1rem;
+      padding-bottom: 3rem;
+    }
+  
+    .lawyer-details-control-cases,
+    .lawyer-details-control {
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+  
+    .inputControl-cases,
+    .inputControl {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  
+    textarea.inputControl-cases {
+      min-height: 100px;
+    }
+  
+    .create-lawyer-account-cases {
+      font-size: 0.9rem;
+      padding: 0.8rem 1rem;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Extra small mobile styles */
+  @media (max-width: 320px) {
+    .textLogoContainer-cases h1 {
+      font-size: 1.3rem;
+    }
+  
+    .lawyer-details-control-cases,
+    .lawyer-details-control {
+      font-size: 0.9rem;
+    }
+  
+    .inputControl-cases,
+    .inputControl {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+  
+    .create-lawyer-account-cases {
+      font-size: 0.85rem;
+      padding: 0.7rem 0.8rem;
+    }
+  }
+  
+  /* Improved focus states and accessibility */
+  .inputControl-cases:focus,
+  .inputControl:focus,
+  .create-lawyer-account-cases:focus {
+    outline: 2px solid hsl(205, 78%, 60%);
+    outline-offset: 2px;
+  }
+  
+  /* Loading state for submit button */
+  .create-lawyer-account-cases:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Smooth transitions */
+  * {
+    transition: all 0.3s ease;
+  }
+  
+  /* Print styles */
+  @media print {
+    .lawyer-register-container-cases {
+      border: 1px solid #000;
+      box-shadow: none;
+      margin: 0;
+      width: 100%;
+    }
+  
+    .create-lawyer-account-cases {
+      background-color: #000 !important;
+      color: #fff !important;
+    }
+  }

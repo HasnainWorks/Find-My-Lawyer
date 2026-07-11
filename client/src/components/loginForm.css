@@ -1,0 +1,249 @@
+.form-bodyLogin {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bodyContainerLogin {
+    border: 2px solid hsl(205, 78%, 60%);
+    height: 92vh;
+    width: 45vw;
+    /* margin-left: 15rem; */
+    margin-top: 2rem;
+    margin-bottom: 17rem;
+    position: relative;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.containerLogin {
+    position: absolute;
+    left: 0;
+    /* border: 10px solid yellow; */
+    height: 70%;
+    width: 70%;
+    font-size: 1.5rem;
+    
+}
+
+.form-controlLogin {
+    /* border: 2px solid black; */
+    position: relative;
+    padding: 1rem;
+    width: 36vw;
+}
+
+.TextLogin {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.FieldLogin {
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+    height: 5vh;
+    width: 40vw;
+    padding: 0.7rem;
+    font-size: 20px;
+    border-radius: 10px;
+    /* position: relative; */
+}
+
+.FieldLogin:focus {
+    outline: none;
+}
+
+.submit-btnLogin {
+    background-color:  hsl(205, 78%, 60%);
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40vw;
+    height: 7vh;
+    /* margin: 2rem; */
+    margin-left: 2rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+.submit-btnLogin:hover {
+    background-color: hsl(205, 78%, 33%);
+}
+
+.container-forget {
+    /* margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: absolute; */
+}
+
+/* .container-forget:hover {
+    background: hsl(205, 78%, 33%);
+    color: hsl(205, 78%, 33%);
+} */
+
+.underlineForgetLogin {
+    /* position: relative;
+    right: 1%; */
+    height: 0.3rem;
+    width: 11.2rem;
+    background: rgb(68, 66, 66);
+}
+
+.underlineForgetLogin:hover {
+    background: hsl(205, 78%, 33%);
+}
+
+.forgot-linkLogin {
+    text-decoration: none;
+    color: rgb(68, 66, 66);
+    /* position: absolute;
+    right: 0; */
+}
+
+.forgot-linkLogin:hover {
+    color: hsl(205, 78%, 33%);
+}
+
+.container-btn-textLogin {
+    /* border: 2px solid green; */
+    /* position: relative;
+    right: 0px;
+    margin-left: 10rem; */
+    /* margin-left: 10rem; */
+    /* position: relative; */
+    /* display: flex;
+    justify-content: flex-end; */
+    /* right: 0; */
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+    /* color: black; */
+}
+
+.text-accountLogin {
+    display: inline;
+}
+
+.registerLogin {
+    /* border: 2px solid black; */
+    /* display: inline; */
+    margin-top: 1rem;
+    margin-left: 10rem;
+    padding: 2rem;
+    width: 20vw;
+}
+
+.text-accountLogin {
+    /* border: 2px solid rebeccapurple; */
+    font-size: 1.1rem;
+    margin-left: 3rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-top: 0.6rem;
+}
+
+.register-btnLogin {
+    border: none;
+    background: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: hsl(205, 78%, 60%);
+}
+
+.HireLogin {
+    color: hsl(205, 78%, 60%);
+    font-weight: normal;
+}
+
+.Register-btnLogin {
+    background: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: hsl(205, 78%, 60%);
+    /* margin-left: 5rem; */
+    /* display: inline; */
+    /* position: absolute;
+    right: 50; */
+    /* top: 40.4rem; */
+    /* left: 33.5rem; */
+}
+
+.Register-btnLogin-Control {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    margin: 0rem 0.3rem;
+    /* left: 5; */
+    /* bottom: 0; */
+}
+
+.MainTextLogin {
+    margin: 2rem 2rem;
+}
+
+
+@media (max-width: 420px) {
+    .FieldLogin {
+      
+        width: 37vw;
+        height: 4rem;
+        font-size: 1.5rem;
+       
+        /* position: relative; */
+    }
+    .submit-btnLogin {
+        
+        width: 37vw;
+       
+    }
+    .bodyContainerLogin {
+        
+        height: 61.5vh;
+        width: 60vw;
+        
+    }
+    .submit-btnLogin {
+        background-color:  hsl(205, 78%, 60%);
+        color: white;
+        padding: 1rem;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        /* width: 40vw; */
+        height: 4vh;
+        /* margin: 2rem; */
+        /* margin-left: 2rem; */
+        /* margin-top: 5rem; */
+        /* border-radius: 10px; */
+    }
+}
+
+.success-message {
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    color: #c62828;
+    background-color: #fdecea;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+
+  

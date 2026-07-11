@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+/* Add a class to the elements you want to animate */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.about-container {
+  background-color: #e9ebeb;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.img1_abt,
+.img2_abt,
+.img3_abt {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.abt-para-con {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2rem;
+  justify-content: center;
+  margin: 1rem;
+  font-family: "Arial", sans-serif; /* Replace with your desired font family */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.abt-para-con-1 {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2rem;
+  justify-content: center;
+  margin: 1rem;
+  font-family: "Arial", sans-serif; /* Replace with your desired font family */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.HireText {
+  color: hsl(205, 78%, 60%);
+}
+
+.card_abt {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #333;
+}
+
+.container-aboutus {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.title {
+  color: #333;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid rgb(9, 110, 182);
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  background-color: rgb(9, 110, 182);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.abt_para {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* Example of adding background styling */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Example of adding transitions and animations */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .abt_para {
+    margin: 2rem 1rem;
+  }
+
+  .img1_abt,
+  .img2_abt,
+  .img3_abt {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 420px) {
+  .column {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .container-aboutus {
+    padding: 1rem;
+  }
+
+  .abt_para {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+}
+

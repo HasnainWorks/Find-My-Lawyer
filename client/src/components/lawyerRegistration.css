@@ -1,0 +1,111 @@
+.lawyer-register-container {
+    border: 2px solid hsl(205, 78%, 60%);
+    height: auto;
+    width: 80%;
+    margin: 4rem auto;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.textLogoContainer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logoText {
+    color: hsl(205, 78%, 60%);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.lawyer-details-container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.form-container-registration {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.lawyer-details-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.lawyer-details-control label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.inputControl {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.inputControl:focus {
+    outline: none;
+    border-color: hsl(205, 78%, 60%);
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.create-lawyer-account {
+    background-color: hsl(205, 78%, 60%);
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.create-lawyer-account:hover {
+    background-color: hsl(205, 78%, 50%);
+}
+
+@media (max-width: 768px) {
+    .lawyer-register-container {
+        width: 90%;
+    }
+
+    .logoText {
+        font-size: 1.5rem;
+    }
+
+    .create-lawyer-account {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .form-container-registration {
+        grid-template-columns: 1fr;
+    }
+
+    .inputControl {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .create-lawyer-account {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}

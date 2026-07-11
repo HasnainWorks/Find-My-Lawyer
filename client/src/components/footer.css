@@ -1,0 +1,111 @@
+.footer-container {
+    width: 100%;
+    /* position: absolute;
+    bottom: 0; */
+    background: hsl(205, 78%, 60%);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    margin-top: 2rem;
+    font-size: 13px;
+    padding: 10px;
+    /* border: 2px red solid; */
+    /* height: 20vw; */
+}
+/* linear-gradient(to right, #00093c, #2d0b00) */
+.footer-row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.footer-col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-col:nth-child(2), .footer-col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.footer-email {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.footer-ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer-ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.footer-form far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer-form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.footer-form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .all {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 85%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
