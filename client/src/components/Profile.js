@@ -19,7 +19,7 @@ const Profile = () => {
       try {
         const token = localStorage.getItem("accessToken");
         const response = await axios.get(
-          `http://localhost:5000/lawyer/profile/${id}`,
+          `https://find-my-lawyer.onrender.com/lawyer/profile/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ const Profile = () => {
     const fetchCaseStudies = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/casestudy/getallcasestudies"
+          "https://find-my-lawyer.onrender.com/casestudy/getallcasestudies"
         );
         const all = response.data.data || [];
         const filtered = all.filter((cs) => cs.lawyerID?._id === id);

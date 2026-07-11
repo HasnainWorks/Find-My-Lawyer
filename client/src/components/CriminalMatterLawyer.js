@@ -16,7 +16,7 @@ const CriminalMatterLawyer = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get('http://localhost:5000/lawyer/getcriminalmatterlawyers');
+        const response = await axios.get('https://find-my-lawyer.onrender.com/lawyer/getcriminalmatterlawyers');
         const data = response.data.data;
         setDataLawyers(data || []);
         setError(null);

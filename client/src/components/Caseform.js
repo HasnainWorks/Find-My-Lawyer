@@ -37,7 +37,7 @@ const Caseform = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/casestudy/postcasestudies",
+        "https://find-my-lawyer.onrender.com/casestudy/postcasestudies",
         formData,
         {
           headers: {

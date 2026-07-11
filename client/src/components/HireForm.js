@@ -23,7 +23,7 @@ function HireForm({ selectedProfileEmail }) {
         recipient: selectedProfileEmail,
       };
 
-      const response = await axios.post('http://localhost:5000/contact/sendemailtolawyer', formData);
+      const response = await axios.post('https://find-my-lawyer.onrender.com/contact/sendemailtolawyer', formData);
       console.log(response);
 
       if (response.status === 200) {

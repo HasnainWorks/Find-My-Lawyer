@@ -16,7 +16,7 @@ const LegalNoticeLawyer = () => {
     const fetchLawyers = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get('http://localhost:5000/lawyer/getlegalnoticelawyers');
+        const response = await axios.get('https://find-my-lawyer.onrender.com/lawyer/getlegalnoticelawyers');
         const data = response.data.data;
         console.log('Fetched lawyers data:', data);
         setLawyers(data || []);

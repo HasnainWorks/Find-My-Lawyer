@@ -14,7 +14,7 @@ const Casedescription = () => {
     const fetchCase = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/casestudy/getallcasestudies"
+          "https://find-my-lawyer.onrender.com/casestudy/getallcasestudies"
         );
         const all = response.data.data || [];
         const found = all.find((cs) => cs._id === id);

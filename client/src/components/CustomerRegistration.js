@@ -12,7 +12,7 @@ const CustomerRegistration = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post('http://localhost:5000/client/registerclient',data)
+      const response = await axios.post('https://find-my-lawyer.onrender.com/client/registerclient',data)
       console.log(response.data);
       navigate('/home')
     } catch (error) {

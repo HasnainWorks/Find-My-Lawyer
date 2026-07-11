@@ -20,7 +20,7 @@ const LawyerLogin = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/lawyer/logininlawyer",
+        "https://find-my-lawyer.onrender.com/lawyer/logininlawyer",
         data
       );
 

@@ -28,7 +28,7 @@ const GetLawyers = () => {
         const token = localStorage.getItem("accessToken");
 
         const response = await axios.get(
-          `http://localhost:5000/lawyer/expertise/${expertise}`,
+          `https://find-my-lawyer.onrender.com/lawyer/expertise/${expertise}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

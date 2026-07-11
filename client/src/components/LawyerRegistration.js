@@ -34,7 +34,7 @@ const LawyerRegistration = () => {
       formData.append("image", data.image[0]);
 
       const response = await axios.post(
-        "http://localhost:5000/lawyer/registerlawyer",
+        "https://find-my-lawyer.onrender.com/lawyer/registerlawyer",
         formData,
         {
           headers: {

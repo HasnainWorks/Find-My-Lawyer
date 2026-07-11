@@ -14,7 +14,7 @@ const FamilyMatterLawyers = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/lawyer/getfamilyMatterLawyer');
+        const response = await axios.get('https://find-my-lawyer.onrender.com/lawyer/getfamilyMatterLawyer');
         const data = response.data.data; // Assuming response structure has a `data` field containing the array
         console.log(data);
         setDataLawyers(data || []); // Ensure it defaults to an empty array if data is undefined

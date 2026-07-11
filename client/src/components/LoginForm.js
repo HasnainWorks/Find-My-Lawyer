@@ -13,7 +13,7 @@ const LoginForm = () => {
   
   const onSubmit = async (data) => {
    try {
-     const response = await axios.post('http://localhost:5000/client/logininclient',data)
+     const response = await axios.post('https://find-my-lawyer.onrender.com/client/logininclient',data)
      console.log(response);
      localStorage.setItem('accessToken', response.data.data.accessToken);
      localStorage.setItem('role', 'customer');

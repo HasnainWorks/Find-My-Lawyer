@@ -16,7 +16,7 @@ const Cases = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/casestudy/getallcasestudies"
+          "https://find-my-lawyer.onrender.com/casestudy/getallcasestudies"
         );
         const caseStudies = response.data.data;
 

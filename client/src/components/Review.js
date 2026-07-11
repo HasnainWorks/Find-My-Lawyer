@@ -14,7 +14,7 @@ function Review() {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/review/getreviews');
+        const response = await axios.get('https://find-my-lawyer.onrender.com/review/getreviews');
         const data = response.data.data; // Assuming response structure has a `data` field containing the array
         console.log(data);
         setReviews(data || []); // Ensure it defaults to an empty array if data is undefined
