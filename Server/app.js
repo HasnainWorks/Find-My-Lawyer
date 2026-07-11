@@ -8,9 +8,12 @@ const upload = multer();
 
 // app.use(upload.any());
 app.use(cors({
-    origin: "http://localhost:3000",
-    credentials: true
-  }));
+  origin: [
+    "http://localhost:3000",
+    "https://find-my-lawyer.netlify.app"
+  ],
+  credentials: true
+}));
 app.use(cookieParser())
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
